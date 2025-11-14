@@ -129,3 +129,39 @@ footer {
     height: 260px;
   }
 }
+
+/* Simple dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #003e7e;
+  min-width: 160px;
+  padding: 8px 0;
+  z-index: 10;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 16px;
+  margin: 0;
+  text-align: left;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
