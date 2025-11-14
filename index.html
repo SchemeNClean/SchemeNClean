@@ -3,135 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SchemeNClean | Exterior House Washing</title>
+  <title>SchemeNClean | Home</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #0a84ff;
-      padding: 20px;
-      text-align: center;
-      color: white;
-    }
-    .logo-btn {
-      color: white;
-      text-decoration: none;
-    }
-    nav {
-      background: #003e7e;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
+    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+    header { background: #0a84ff; padding: 20px; text-align: center; color: white; display: flex; flex-direction: column; align-items: center; }
+    .logo { max-width: 200px; cursor: pointer; margin-bottom: 10px; }
+
+    button.nav-btn {
+      background-color: #0a84ff; 
+      color: white; 
+      border: none; 
+      padding: 10px 20px; 
+      margin: 5px; 
+      border-radius: 5px; 
+      cursor: pointer; 
       font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
+    button.nav-btn:hover { background-color: #0060b0; }
+
     .hero {
       background: url("https://images.unsplash.com/photo-1597003036230-7a0ae71a10a7?q=80&w=1200") center/cover no-repeat;
-      height: 350px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-shadow: 2px 2px 10px black;
-      font-size: 2.2rem;
-      font-weight: bold;
-      text-align: center;
-      padding: 0 20px;
+      height: 350px; display: flex; justify-content: center; align-items: center;
+      color: white; text-shadow: 2px 2px 10px black; font-size: 2.5rem; font-weight: bold; margin-bottom: 20px;
     }
-    .section {
-      padding: 40px;
-      text-align: center;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .services {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      width: 250px;
-      border-radius: 10px;
-      box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      background: #003e7e;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      margin-top: 40px;
-    }
+
+    footer { background: #003e7e; color: white; padding: 20px; text-align: center; margin-top: 40px; }
   </style>
 </head>
 <body>
   <header>
-    <a class="logo-btn" href="index.html">
-      <h1>SchemeNClean</h1>
-    </a>
+    <img src="logo.png" alt="SchemeNClean Logo" class="logo" onclick="location.href='index.html'" />
+    <h1>SchemeNClean</h1>
     <p>Keeping Gainesville Scheming and Clean since 2025</p>
+
+    <div>
+      <button class="nav-btn" onclick="location.href='index.html'">Home</button>
+      <button class="nav-btn" onclick="location.href='services.html'">Services</button>
+      <button class="nav-btn" onclick="location.href='reviews.html'">Reviews</button>
+      <button class="nav-btn" onclick="location.href='about.html'">About</button>
+      <button class="nav-btn" onclick="location.href='contact.html'">Contact</button>
+    </div>
   </header>
 
-  <nav>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="hero">Refresh Your Space, Restore Your Shine</div>
 
-  <div class="hero">
-    Refresh Your Space, Restore Your Shine
-  </div>
-
-  <section class="section">
-    <h2>What We Do</h2>
-    <p>Professional exterior cleaning done right — every time.</p>
-    <div class="services">
-      <div class="card">
-        <h3>Pressure Washing</h3>
-        <p>Driveways, sidewalks, patios, and more.</p>
-      </div>
-      <div class="card">
-        <h3>House Washing</h3>
-        <p>Soft-wash cleaning for siding, vinyl, brick, and tougher jobs.</p>
-      </div>
-      <div class="card">
-        <h3>Roof Cleaning</h3>
-        <p>Safe, effective soft-wash for shingles and tile roofs.</p>
-      </div>
-      <div class="card">
-        <h3>Gutter Cleaning</h3>
-        <p>Interior clearing + exterior brightening available.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Why Choose Us?</h2>
-    <p>Friendly service, honest work, and results that make your home look brand new.</p>
-  </section>
-
-  <section class="section">
-    <h2>Contact Us</h2>
-    <p>Email: schemenclean@example.com</p>
-    <p>Phone: (352) 574-3473</p>
-  </section>
-
-  <footer>
-    <p>© 2025 SchemeNClean. All Rights Reserved.</p>
-  </footer>
+  <footer>© 2025 SchemeNClean. All Rights Reserved.</footer>
 </body>
 </html>
