@@ -34,11 +34,14 @@ header p {
   opacity: 0.9;
 }
 .logo {
-  max-width: 160px;
-  cursor: pointer;
+  max-width: 260px;       /* perfect sizing for your wide logo */
+  width: 100%;
+  height: auto;
   display: block;
-  margin: 0 auto 6px;
+  margin: 0 auto 12px;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15)); /* optional glow */
 }
+
 
 /* Top nav bar */
 .navbar {
