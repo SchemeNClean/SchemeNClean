@@ -17,7 +17,7 @@ body {
 /* Header & logo */
 header {
   background: radial-gradient(circle at top left, #22c1c3 0%, #2563eb 40%, #0f172a 100%);
-  padding: 28px 20px 24px;
+  padding: 32px 20px 24px;
   text-align: center;
   color: white;
   box-shadow: 0 4px 16px rgba(15, 23, 42, 0.35);
@@ -33,15 +33,16 @@ header p {
   font-weight: 400;
   opacity: 0.9;
 }
+
+/* Logo */
 .logo {
-  max-width: 260px;       /* perfect sizing for your wide logo */
+  max-width: 260px;       /* good size for your logo.png */
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto 12px;
-  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15)); /* optional glow */
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15));
 }
-
 
 /* Top nav bar */
 .navbar {
@@ -103,8 +104,9 @@ header p {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top, rgba(37, 99, 235, 0.55), transparent 60%),
-              linear-gradient(to bottom, rgba(15, 23, 42, 0.15), rgba(15, 23, 42, 0.7));
+  background:
+    radial-gradient(circle at top, rgba(37, 99, 235, 0.55), transparent 60%),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.15), rgba(15, 23, 42, 0.7));
   z-index: 0;
 }
 .hero {
@@ -142,8 +144,9 @@ header p {
 }
 
 .card {
-  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 60%),
-              #ffffff;
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 60%),
+    #ffffff;
   padding: 20px 18px;
   width: 260px;
   border-radius: 16px;
